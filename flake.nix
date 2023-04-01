@@ -20,6 +20,7 @@
           ./woodpecker.nix
           ./tailscale.nix
           ./minio.nix
+          ./monitoring.nix
           agenix.nixosModules.default
         ];
       };

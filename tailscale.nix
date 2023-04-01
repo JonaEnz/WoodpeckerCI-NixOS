@@ -6,6 +6,7 @@
     useRoutingFeatures = "both";
   };
   networking.firewall.allowedUDPPorts = [ 41641 ];
+  networking.firewall.trustedInterfaces = [ "tailscale0" ];
 
   # create a oneshot job to authenticate to Tailscale
   systemd.services.tailscale-autoconnect = {
