@@ -18,6 +18,8 @@
         modules = [
           ./configuration.nix
           ./woodpecker.nix
+          ./tailscale.nix
+          ./minio.nix
           agenix.nixosModules.default
         ];
       };

@@ -7,4 +7,6 @@ in
 {
   "woodpecker-server.env.age".publicKeys = [ jona woodpecker ];
   "woodpecker-agent.env.age".publicKeys = [ jona woodpecker ];
+  "tailscale-auth-token.age".publicKeys = [ jona woodpecker ];
+  "minio.env.age".publicKeys = [ jona woodpecker ];
 }
