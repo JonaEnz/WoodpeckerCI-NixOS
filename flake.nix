@@ -17,6 +17,7 @@
         system = "aarch64-linux";
         modules = [
           ./configuration.nix
+          ./nginx.nix
           ./woodpecker.nix
           ./tailscale.nix
           ./minio.nix

@@ -29,17 +29,7 @@
     '';
   };
 
-  networking.firewall.allowedTCPPorts = [ 443 80 ];
-
-  security.acme.acceptTerms = true;
-  security.acme.certs = {
-    "woodpecker.jonaenz.de" = {
-      email = "jona_enzinger@outlook.com";
-    };
-  };
-
   services.nginx = {
-    enable = true;
     virtualHosts."woodpecker.jonaenz.de" =
       {
         enableACME = true;
